@@ -45,7 +45,7 @@ Hi, I'm **Arap K. Bett**, a passionate cybersecurity enthusiast and developer de
 - 📧 Email: bettarap254@gmail.com
 - 🐦 X: https://x.com/kp15_5
 - 💼 LinkedIn: https://www.linkedin.com/in/kipkorir-job-ba580a321
-- 🌍 Portfolio: akbett.onrender.com
+- 🌍 Portfolio: arapbett.onrender.com
 
 ---
 
