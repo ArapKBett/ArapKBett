@@ -198,62 +198,33 @@ current_objectives:
 
 ---
 
-<!-- OPERATIONS LOG / FEATURED WORK -->
+<!-- LATEST REPOS - AUTO-UPDATED -->
 <div align="center">
 
-### `> tail -f /var/log/operations.log`
+### `> ls -lt /repos/ | head -6`
 
 </div>
 
-```
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                        ACTIVE OPERATIONS REGISTRY                          ║
-╠══════════════════════════════════════════════════════════════════════════════╣
-║                                                                            ║
-║  [OP-001] SecureChain Forensics                                            ║
-║  ├─ Status: DEPLOYED                                                       ║
-║  ├─ Stack:  Solidity | Hardhat | Monad | MetaMask                          ║
-║  ├─ Desc:   Blockchain forensic analysis & smart contract auditing         ║
-║  └─ Class:  BLOCKCHAIN FORENSICS                                           ║
-║                                                                            ║
-║  [OP-002] BountyHunter                                                     ║
-║  ├─ Status: ACTIVE                                                         ║
-║  ├─ Stack:  Python | Nmap | SQLMap | Custom Modules                        ║
-║  ├─ Desc:   Modular recon & vulnerability scanner (XSS, SQLi, LFI)        ║
-║  └─ Class:  PENETRATION TESTING                                            ║
-║                                                                            ║
-║  [OP-003] AI Threat Detector                                               ║
-║  ├─ Status: ACTIVE                                                         ║
-║  ├─ Stack:  Python | Scikit-learn | Transformers | DistilBERT              ║
-║  ├─ Desc:   Real-time AI-driven anomaly detection & incident analysis      ║
-║  └─ Class:  AI THREAT INTELLIGENCE                                         ║
-║                                                                            ║
-║  [OP-004] Network Vulnerability Scanner                                    ║
-║  ├─ Status: DEPLOYED                                                       ║
-║  ├─ Stack:  C | C++ | Java | Socket Programming                           ║
-║  ├─ Desc:   Low-level network scanner for port & vulnerability enumeration ║
-║  └─ Class:  NETWORK SECURITY                                               ║
-║                                                                            ║
-║  [OP-005] CyberNews Bots                                                   ║
-║  ├─ Status: OPERATIONAL                                                    ║
-║  ├─ Stack:  Python | discord.py | python-telegram-bot | REST APIs          ║
-║  ├─ Desc:   Real-time cybersecurity & crypto news aggregation bots         ║
-║  └─ Class:  AUTOMATION & OSINT                                             ║
-║                                                                            ║
-║  [OP-006] Web App Security Suite                                           ║
-║  ├─ Status: ACTIVE                                                         ║
-║  ├─ Stack:  Python | Flask | FastAPI | OWASP                               ║
-║  ├─ Desc:   Vulnerability scanning dashboard with report generation        ║
-║  └─ Class:  APPLICATION SECURITY                                           ║
-║                                                                            ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-```
+<!-- REPOS-START -->
+<!-- REPOS-END -->
 
 <div align="center">
 
 > **`[SYS] All operations accessible via repositories tab`**
 
 </div>
+
+---
+
+<!-- RECENT ACTIVITY - AUTO-UPDATED -->
+<div align="center">
+
+### `> tail -f /var/log/activity.log`
+
+</div>
+
+<!-- ACTIVITY-START -->
+<!-- ACTIVITY-END -->
 
 ---
 
@@ -354,5 +325,9 @@ Status:   ██████████ OPERATIONAL
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00ff41,100:0d1117&height=120&section=footer" width="100%"/>
+
+<!-- LAST-UPDATED-START -->
+<sub>Last system sync: auto-updated by GitHub Actions</sub>
+<!-- LAST-UPDATED-END -->
 
 </div>
