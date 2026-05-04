@@ -160,14 +160,14 @@ current_objectives:
 
 <!-- Streak Stats -->
 <a href="https://github.com/ArapKBett">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ArapKBett&theme=chartreuse-dark&background=0d1117&ring=00ff41&fire=00ff41&currStreakLabel=00ff41&sideLabels=00ff41&currStreakNum=00ff41&sideNums=00ff41&dates=006600&border=00ff41" width="700"/>
+  <img src="https://streak-stats.demolab.com/?user=ArapKBett&theme=chartreuse-dark&background=0d1117&ring=00ff41&fire=00ff41&currStreakLabel=00ff41&sideLabels=00ff41&currStreakNum=00ff41&sideNums=00ff41&dates=006600&border=00ff41" width="700"/>
 </a>
 
 <br/><br/>
 
 <!-- Activity Graph -->
 <a href="https://github.com/ArapKBett">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArapKBett&bg_color=0d1117&color=00ff41&line=00ff41&point=ffffff&area_color=00ff41&area=true&hide_border=false&custom_title=NETWORK%20ACTIVITY%20MONITOR&border_color=00ff41" width="95%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArapKBett&bg_color=0d1117&color=00ff41&line=00ff41&point=ffffff&area_color=00ff41&area=true&hide_border=false&title=NETWORK%20ACTIVITY%20MONITOR&border_color=00ff41" width="95%"/>
 </a>
 
 <br/><br/>
