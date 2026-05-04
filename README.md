@@ -1,67 +1,358 @@
-# 👋 Welcome to ArapKBett's GitHub!
+<div align="center">
 
-Hi, I'm **Arap K. Bett**, a passionate cybersecurity enthusiast and developer dedicated to building secure, innovative solutions across all sectors of cybersecurity. My work cuts across network security, blockchain forensics, AI-powered threat detection, vulnerability scanning, and more. I love tackling complex challenges, from developing tools for ethical hacking to automating incident response and deploying secure applications.
+<!-- HEADER SECTION -->
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0d1117,50:00ff41,100:0d1117&height=300&section=header&text=ARAP%20K.%20BETT&fontSize=80&fontColor=00ff41&animation=fadeIn&fontAlignY=35&desc=%E2%96%88%E2%96%93%E2%96%92%E2%96%91%20CYBERSECURITY%20ENGINEER%20%7C%20OFFENSIVE%20SECURITY%20%7C%20AI%20THREAT%20INTELLIGENCE%20%E2%96%91%E2%96%92%E2%96%93%E2%96%88&descSize=14&descAlignY=55&descAlign=50" width="100%"/>
 
-🔒 **Mission**: To advance cybersecurity through open-source tools, practical AI applications, and robust system design, ensuring safer digital environments for all.
+<!-- TYPING ANIMATION -->
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=800&height=100&lines=%24+sudo+nmap+-sV+--script+vuln+target_system;%24+msfconsole+-q+-x+'use+exploit%2Fmulti%2Fhandler';%24+python3+ai_threat_detector.py+--mode+realtime;%24+hashcat+-m+1000+-a+0+hashes.txt+rockyou.txt;%24+kubectl+apply+-f+secure-deployment.yaml" alt="Typing SVG" /></a>
 
----
+<!-- PROFILE VIEWS & FOLLOWERS -->
+<br/>
 
-## 🛠️ What I Do
+![Profile Views](https://komarev.com/ghpvc/?username=ArapKBett&style=for-the-badge&color=00ff41&label=SYSTEM+SCANS)
+[![GitHub followers](https://img.shields.io/github/followers/ArapKBett?style=for-the-badge&color=00ff41&labelColor=0d1117&label=NETWORK+NODES)](https://github.com/ArapKBett?tab=followers)
+[![GitHub stars](https://img.shields.io/github/stars/ArapKBett?style=for-the-badge&color=00ff41&labelColor=0d1117&label=THREAT+SIGNATURES)](https://github.com/ArapKBett?tab=repositories)
 
-- **Network Security**: Building tools like network vulnerability scanners to identify open ports, vulnerabilities, and remediation strategies using C, C++, and Java.
-- **Blockchain Forensics**: Developing smart contracts and forensic tools (e.g., SecureChain Forensics) for blockchain analysis, deployed on networks like Monad with MetaMask integration.
-- **AI in Cybersecurity**: Creating AI-driven solutions for incident analysis, anomaly detection, and log analysis using Python, Scikit-learn, and Transformers.
-- **Penetration Testing**: Designing modular programs with reconnaissance, vulnerability scanning (XSS, SQLi, LFI, etc.), and pentesting strategies, like my BountyHunter tool.
-- **Automation & Bots**: Building Telegram and Discord bots to deliver real-time cybersecurity, cryptocurrency, and forex news.
-- **Web Application Security**: Developing Flask- and FastAPI-based tools with hacker-style interfaces for vulnerability scanning and report generation.
-- **DevSecOps**: Deploying secure applications on platforms like Render, using Docker and GitHub for seamless CI/CD pipelines.
-
----
-
-## 🌟 Featured Projects can all be accessed in my repositories 
----
-
-## 🔧 Technologies & Tools
-
-- **Languages**: Python, C, C++, Java, JavaScript, Solidity, Go, Ruby, PHP, Swift
-- **Frameworks & Libraries**: Flask, FastAPI, Scikit-learn, Transformers, Hardhat, discord.py, python-telegram-bot
-- **Cybersecurity Tools**: Nmap, Wireshark, Metasploit, Burp Suite, John the Ripper, sqlmap
-- **DevOps & Deployment**: Docker, Render, GitHub Actions, Termux
-- **Blockchain**: Ethereum, Monad, MetaMask, Infura
-- **AI/ML**: Scikit-learn, Isolation Forest, DistilBERT, LLMs
-- **Other**: REST APIs, WebSockets, Canvas animations, Redis, MySQL
+</div>
 
 ---
 
-## 📈 My GitHub Stats
+<!-- TERMINAL ABOUT SECTION -->
+```
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  ██████╗ ██████╗ ██████╗ ███████╗    ██████╗ ██╗   ██╗███╗   ███╗██████╗   │
+│  ██╔════╝██╔═══██╗██╔══██╗██╔════╝    ██╔══██╗██║   ██║████╗ ████║██╔══██╗  │
+│  ██║     ██║   ██║██████╔╝█████╗      ██║  ██║██║   ██║██╔████╔██║██████╔╝  │
+│  ██║     ██║   ██║██╔══██╗██╔══╝      ██║  ██║██║   ██║██║╚██╔╝██║██╔═══╝   │
+│  ╚██████╗╚██████╔╝██║  ██║███████╗    ██████╔╝╚██████╔╝██║ ╚═╝ ██║██║       │
+│   ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═╝       │
+│                                                                              │
+│  [SYS] Initializing operative profile...                                     │
+│  [SYS] Clearance level: ROOT                                                 │
+│  [SYS] Status: ACTIVE                                                        │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+```
 
-![ArapKBett's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ArapKBett&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ArapKBett&layout=compact&theme=radical)
+<div align="center">
+
+### `> cat /etc/operative/identity.conf`
+
+</div>
+
+```yaml
+# ══════════════════════════════════════════════════════════════
+#  OPERATIVE DOSSIER — CLASSIFIED
+# ══════════════════════════════════════════════════════════════
+
+designation:    "Arap K. Bett"
+callsign:       "ArapKBett"
+role:           "Cybersecurity Engineer & Offensive Security Researcher"
+affiliation:    "Independent | Open-Source Contributor"
+base:           "Kenya"
+status:         "ACTIVE"
+
+mission_statement: >
+  Advancing cybersecurity through weaponized open-source tools,
+  AI-driven threat intelligence systems, and hardened infrastructure.
+  Every line of code is a line of defense.
+
+clearance_domains:
+  - Network Penetration Testing & Vulnerability Research
+  - Blockchain Forensics & Smart Contract Auditing
+  - AI/ML Threat Detection & Anomaly Analysis
+  - Red Team Operations & Exploit Development
+  - DevSecOps Pipeline Hardening
+  - Web Application Security (OWASP Top 10)
+  - Incident Response Automation
+
+current_objectives:
+  - "Building AI-powered real-time threat detection systems"
+  - "Developing blockchain forensic analysis frameworks"
+  - "Automating offensive security workflows"
+  - "Contributing to open-source security tooling"
+```
 
 ---
 
-## 🌐 Connect With Me
+<!-- TECH ARSENAL SECTION -->
+<div align="center">
 
-- 📧 Email: bettarap254@gmail.com
-- 🐦 X: https://x.com/kp15_5
-- 💼 LinkedIn: https://www.linkedin.com/in/kipkorir-job-ba580a321
-- 🌍 Portfolio: arapbett.onrender.com
+### `> ls -la /arsenal/`
+
+</div>
+
+<div align="center">
+
+#### `// LANGUAGES`
+
+![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=00ff41)
+![C](https://img.shields.io/badge/C-0d1117?style=for-the-badge&logo=c&logoColor=00ff41)
+![C++](https://img.shields.io/badge/C++-0d1117?style=for-the-badge&logo=cplusplus&logoColor=00ff41)
+![Java](https://img.shields.io/badge/Java-0d1117?style=for-the-badge&logo=openjdk&logoColor=00ff41)
+![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=00ff41)
+![Go](https://img.shields.io/badge/Go-0d1117?style=for-the-badge&logo=go&logoColor=00ff41)
+![Solidity](https://img.shields.io/badge/Solidity-0d1117?style=for-the-badge&logo=solidity&logoColor=00ff41)
+![Ruby](https://img.shields.io/badge/Ruby-0d1117?style=for-the-badge&logo=ruby&logoColor=00ff41)
+![PHP](https://img.shields.io/badge/PHP-0d1117?style=for-the-badge&logo=php&logoColor=00ff41)
+![Bash](https://img.shields.io/badge/Bash-0d1117?style=for-the-badge&logo=gnubash&logoColor=00ff41)
+![SQL](https://img.shields.io/badge/SQL-0d1117?style=for-the-badge&logo=mysql&logoColor=00ff41)
+
+#### `// OFFENSIVE SECURITY`
+
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-0d1117?style=for-the-badge&logo=kalilinux&logoColor=00ff41)
+![Metasploit](https://img.shields.io/badge/Metasploit-0d1117?style=for-the-badge&logo=metasploit&logoColor=00ff41)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-0d1117?style=for-the-badge&logo=burpsuite&logoColor=00ff41)
+![Wireshark](https://img.shields.io/badge/Wireshark-0d1117?style=for-the-badge&logo=wireshark&logoColor=00ff41)
+![Nmap](https://img.shields.io/badge/Nmap-0d1117?style=for-the-badge&logo=nmap&logoColor=00ff41)
+![John the Ripper](https://img.shields.io/badge/John_The_Ripper-0d1117?style=for-the-badge&logo=hackthebox&logoColor=00ff41)
+![Hashcat](https://img.shields.io/badge/Hashcat-0d1117?style=for-the-badge&logo=hackthebox&logoColor=00ff41)
+![SQLMap](https://img.shields.io/badge/SQLMap-0d1117?style=for-the-badge&logo=hackthebox&logoColor=00ff41)
+
+#### `// FRAMEWORKS & AI/ML`
+
+![Flask](https://img.shields.io/badge/Flask-0d1117?style=for-the-badge&logo=flask&logoColor=00ff41)
+![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi&logoColor=00ff41)
+![React](https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=00ff41)
+![Next.js](https://img.shields.io/badge/Next.js-0d1117?style=for-the-badge&logo=nextdotjs&logoColor=00ff41)
+![Scikit Learn](https://img.shields.io/badge/Scikit_Learn-0d1117?style=for-the-badge&logo=scikitlearn&logoColor=00ff41)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-0d1117?style=for-the-badge&logo=tensorflow&logoColor=00ff41)
+![Hugging Face](https://img.shields.io/badge/HuggingFace-0d1117?style=for-the-badge&logo=huggingface&logoColor=00ff41)
+
+#### `// BLOCKCHAIN & WEB3`
+
+![Ethereum](https://img.shields.io/badge/Ethereum-0d1117?style=for-the-badge&logo=ethereum&logoColor=00ff41)
+![Hardhat](https://img.shields.io/badge/Hardhat-0d1117?style=for-the-badge&logo=hardhat&logoColor=00ff41)
+![MetaMask](https://img.shields.io/badge/MetaMask-0d1117?style=for-the-badge&logo=metamask&logoColor=00ff41)
+![Web3.js](https://img.shields.io/badge/Web3.js-0d1117?style=for-the-badge&logo=web3dotjs&logoColor=00ff41)
+
+#### `// INFRASTRUCTURE & DEVSECOPS`
+
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=00ff41)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-0d1117?style=for-the-badge&logo=kubernetes&logoColor=00ff41)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0d1117?style=for-the-badge&logo=githubactions&logoColor=00ff41)
+![Linux](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=00ff41)
+![Terraform](https://img.shields.io/badge/Terraform-0d1117?style=for-the-badge&logo=terraform&logoColor=00ff41)
+![Nginx](https://img.shields.io/badge/Nginx-0d1117?style=for-the-badge&logo=nginx&logoColor=00ff41)
+![Redis](https://img.shields.io/badge/Redis-0d1117?style=for-the-badge&logo=redis&logoColor=00ff41)
+![MySQL](https://img.shields.io/badge/MySQL-0d1117?style=for-the-badge&logo=mysql&logoColor=00ff41)
+![MongoDB](https://img.shields.io/badge/MongoDB-0d1117?style=for-the-badge&logo=mongodb&logoColor=00ff41)
+
+</div>
 
 ---
 
-## 🚀 Get Involved
+<!-- GITHUB STATS SECTION -->
+<div align="center">
 
-Interested in collaborating on cybersecurity projects or contributing to my open-source tools? Feel free to:
+### `> ./system_diagnostics.sh --verbose`
 
-- ⭐ Star my repositories if you find them useful!
-- 🐛 Report issues or suggest features via GitHub Issues.
-- 📬 Reach out for potential collaborations or to share ideas.
+<br/>
 
-Let’s build a more secure digital world together! 🔐
+<!-- Stats Cards Row -->
+<a href="https://github.com/ArapKBett">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ArapKBett&show_icons=true&theme=chartreuse-dark&bg_color=0d1117&title_color=00ff41&text_color=00ff41&icon_color=00ff41&border_color=00ff41&ring_color=00ff41&include_all_commits=true&count_private=true&custom_title=SYSTEM%20TELEMETRY"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArapKBett&layout=compact&theme=chartreuse-dark&bg_color=0d1117&title_color=00ff41&text_color=00ff41&border_color=00ff41&langs_count=10&custom_title=LANGUAGE%20DISTRIBUTION"/>
+</a>
+
+<br/><br/>
+
+<!-- Streak Stats -->
+<a href="https://github.com/ArapKBett">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ArapKBett&theme=chartreuse-dark&background=0d1117&ring=00ff41&fire=00ff41&currStreakLabel=00ff41&sideLabels=00ff41&currStreakNum=00ff41&sideNums=00ff41&dates=006600&border=00ff41" width="700"/>
+</a>
+
+<br/><br/>
+
+<!-- Activity Graph -->
+<a href="https://github.com/ArapKBett">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArapKBett&bg_color=0d1117&color=00ff41&line=00ff41&point=ffffff&area_color=00ff41&area=true&hide_border=false&custom_title=NETWORK%20ACTIVITY%20MONITOR&border_color=00ff41" width="95%"/>
+</a>
+
+<br/><br/>
+
+<!-- Trophies -->
+<a href="https://github.com/ArapKBett">
+  <img src="https://github-profile-trophy.vercel.app/?username=ArapKBett&theme=matrix&no-bg=true&no-frame=false&column=7&margin-w=10&margin-h=10" width="95%"/>
+</a>
+
+</div>
 
 ---
 
-*Last updated: July 19, 2025*
+<!-- CONTRIBUTION SNAKE -->
+<div align="center">
+
+### `> python3 visualize_contributions.py --mode=snake`
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArapKBett/ArapKBett/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArapKBett/ArapKBett/output/github-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/ArapKBett/ArapKBett/output/github-snake-dark.svg" />
+</picture>
+
+</div>
 
 ---
 
+<!-- OPERATIONS LOG / FEATURED WORK -->
+<div align="center">
+
+### `> tail -f /var/log/operations.log`
+
+</div>
+
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        ACTIVE OPERATIONS REGISTRY                          ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                            ║
+║  [OP-001] SecureChain Forensics                                            ║
+║  ├─ Status: DEPLOYED                                                       ║
+║  ├─ Stack:  Solidity | Hardhat | Monad | MetaMask                          ║
+║  ├─ Desc:   Blockchain forensic analysis & smart contract auditing         ║
+║  └─ Class:  BLOCKCHAIN FORENSICS                                           ║
+║                                                                            ║
+║  [OP-002] BountyHunter                                                     ║
+║  ├─ Status: ACTIVE                                                         ║
+║  ├─ Stack:  Python | Nmap | SQLMap | Custom Modules                        ║
+║  ├─ Desc:   Modular recon & vulnerability scanner (XSS, SQLi, LFI)        ║
+║  └─ Class:  PENETRATION TESTING                                            ║
+║                                                                            ║
+║  [OP-003] AI Threat Detector                                               ║
+║  ├─ Status: ACTIVE                                                         ║
+║  ├─ Stack:  Python | Scikit-learn | Transformers | DistilBERT              ║
+║  ├─ Desc:   Real-time AI-driven anomaly detection & incident analysis      ║
+║  └─ Class:  AI THREAT INTELLIGENCE                                         ║
+║                                                                            ║
+║  [OP-004] Network Vulnerability Scanner                                    ║
+║  ├─ Status: DEPLOYED                                                       ║
+║  ├─ Stack:  C | C++ | Java | Socket Programming                           ║
+║  ├─ Desc:   Low-level network scanner for port & vulnerability enumeration ║
+║  └─ Class:  NETWORK SECURITY                                               ║
+║                                                                            ║
+║  [OP-005] CyberNews Bots                                                   ║
+║  ├─ Status: OPERATIONAL                                                    ║
+║  ├─ Stack:  Python | discord.py | python-telegram-bot | REST APIs          ║
+║  ├─ Desc:   Real-time cybersecurity & crypto news aggregation bots         ║
+║  └─ Class:  AUTOMATION & OSINT                                             ║
+║                                                                            ║
+║  [OP-006] Web App Security Suite                                           ║
+║  ├─ Status: ACTIVE                                                         ║
+║  ├─ Stack:  Python | Flask | FastAPI | OWASP                               ║
+║  ├─ Desc:   Vulnerability scanning dashboard with report generation        ║
+║  └─ Class:  APPLICATION SECURITY                                           ║
+║                                                                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+```
+
+<div align="center">
+
+> **`[SYS] All operations accessible via repositories tab`**
+
+</div>
+
+---
+
+<!-- METRICS SECTION -->
+<div align="center">
+
+### `> neofetch --security-metrics`
+
+</div>
+
+<div align="center">
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+```properties
+# ══════════════════════════════
+#  THREAT DOMAINS
+# ══════════════════════════════
+
+[■■■■■■■■■■] Network Pentesting
+[■■■■■■■■■░] Web App Security
+[■■■■■■■■■░] Blockchain Forensics
+[■■■■■■■■░░] AI Threat Detection
+[■■■■■■■■░░] Exploit Development
+[■■■■■■■░░░] Reverse Engineering
+[■■■■■■■■■░] DevSecOps
+[■■■■■■■■░░] Incident Response
+[■■■■■■■░░░] Malware Analysis
+[■■■■■■■■░░] OSINT & Recon
+```
+
+</td>
+<td width="50%" valign="top">
+
+```properties
+# ══════════════════════════════
+#  SYSTEM SPECIFICATIONS
+# ══════════════════════════════
+
+OS:       Kali Linux / Ubuntu
+Shell:    zsh + custom configs
+Editor:   VS Code + Vim
+Terminal: tmux + alacritty
+VPN:      WireGuard / OpenVPN
+VM:       VirtualBox / VMware
+Cloud:    GCP / AWS / Render
+CI/CD:    GitHub Actions / Docker
+Comms:    Encrypted channels only
+Status:   ██████████ OPERATIONAL
+```
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+<!-- CONNECT SECTION -->
+<div align="center">
+
+### `> cat /etc/comms/secure_channels.conf`
+
+<br/>
+
+[![Email](https://img.shields.io/badge/ENCRYPTED_MAIL-bettarap254@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=00ff41&labelColor=0d1117&color=00ff41)](mailto:bettarap254@gmail.com)
+[![X](https://img.shields.io/badge/SIGNAL_FEED-@kp15__5-0d1117?style=for-the-badge&logo=x&logoColor=00ff41&labelColor=0d1117&color=00ff41)](https://x.com/kp15_5)
+[![LinkedIn](https://img.shields.io/badge/SECURE_LINK-Kipkorir_Job-0d1117?style=for-the-badge&logo=linkedin&logoColor=00ff41&labelColor=0d1117&color=00ff41)](https://www.linkedin.com/in/kipkorir-job-ba580a321)
+[![Portfolio](https://img.shields.io/badge/COMMAND_CENTER-arapbett.onrender.com-0d1117?style=for-the-badge&logo=googlechrome&logoColor=00ff41&labelColor=0d1117&color=00ff41)](https://arapbett.onrender.com)
+
+</div>
+
+---
+
+<!-- QUOTE / FOOTER -->
+<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║   "The quieter you become, the more you are able to hear."                 ║
+║                                                    — Kali Linux             ║
+║                                                                            ║
+║   ┌─────────────────────────────────────────────────────────────────┐       ║
+║   │  Interested in collaboration?                                   │       ║
+║   │  ★ Star repositories that arm your toolkit                      │       ║
+║   │  ⚑ Report vulnerabilities via GitHub Issues                     │       ║
+║   │  ✉ Reach out through secure channels above                      │       ║
+║   │  Every contribution hardens the perimeter.                      │       ║
+║   └─────────────────────────────────────────────────────────────────┘       ║
+║                                                                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+```
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00ff41,100:0d1117&height=120&section=footer" width="100%"/>
+
+</div>
