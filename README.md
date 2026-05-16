@@ -9,7 +9,7 @@
 <!-- PROFILE VIEWS & FOLLOWERS -->
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=ArapKBett & itsxam&style=for-the-badge&color=00ff41&label=SYSTEM+SCANS)
+![Profile Views](https://komarev.com/ghpvc/?username=ArapKBett&style=for-the-badge&color=00ff41&label=SYSTEM+SCANS)
 [![GitHub followers](https://img.shields.io/github/followers/ArapKBett?style=for-the-badge&color=00ff41&labelColor=0d1117&label=NETWORK+NODES)](https://github.com/ArapKBett?tab=followers)
 [![GitHub stars](https://img.shields.io/github/stars/ArapKBett?style=for-the-badge&color=00ff41&labelColor=0d1117&label=THREAT+SIGNATURES)](https://github.com/ArapKBett?tab=repositories)
 
