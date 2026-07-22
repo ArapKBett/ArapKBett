@@ -26,7 +26,7 @@ def fetch_github_api(endpoint):
     if token:
         headers["Authorization"] = f"token {token}"
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req) as resp:
+    with urllib.request.urlopen(req, timeout=20) as resp:
         return json.loads(resp.read().decode())
 
 
@@ -96,9 +96,13 @@ def get_recent_activity(limit=10):
         action = ""
 
         if event_type == "PushEvent":
-            commits = event["payload"].get("commits", [])
-            n = len(commits)
-            action = f"Pushed {n} commit{'s' if n != 1 else ''} to {repo}"
+            payload = event["payload"]
+            n = payload.get("size") or len(payload.get("commits", []))
+            branch = payload.get("ref", "").replace("refs/heads/", "") or "main"
+            if n:
+                action = f"Pushed {n} commit{'s' if n != 1 else ''} → {repo}:{branch}"
+            else:
+                action = f"Pushed → {repo}:{branch}"
             icon = "⚡"
         elif event_type == "CreateEvent":
             ref_type = event["payload"].get("ref_type", "repository")
@@ -149,9 +153,16 @@ def get_recent_activity(limit=10):
 
 def get_lang_matrix():
     """Fetch repo languages and return a proportional bar code block."""
-    repos = fetch_github_api(
-        f"users/{USERNAME}/repos?per_page=100&type=owner"
-    )
+    repos = []
+    for page in range(1, 6):
+        batch = fetch_github_api(
+            f"users/{USERNAME}/repos?per_page=30&page={page}&type=owner&sort=updated"
+        )
+        if not batch:
+            break
+        repos.extend(batch)
+        if len(batch) < 30:
+            break
     if not repos:
         return "```\n[LANG-MATRIX] No data available.\n```"
 
@@ -190,9 +201,9 @@ def get_timestamp():
 
 
 def update_section(content, start_marker, end_marker, new_content):
-    """Replace content between markers."""
+    """Replace content between markers (handles both empty and populated sections)."""
     pattern = re.compile(
-        rf"({re.escape(start_marker)})\n.*?\n({re.escape(end_marker)})",
+        rf"{re.escape(start_marker)}.*?{re.escape(end_marker)}",
         re.DOTALL,
     )
     replacement = f"{start_marker}\n{new_content}\n{end_marker}"

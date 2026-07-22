@@ -122,6 +122,7 @@
 <text x="16" y="220" class="mono dim" font-size="9">Python</text>
 <rect x="16" y="224" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
 <rect x="16" y="224" width="130" height="6" rx="1" fill="#00aa22"/>
+<<<<<<< HEAD
 <text x="150" y="230" class="mono dim" font-size="8">39</text>
 <text x="16" y="250" class="mono dim" font-size="9">JavaScript</text>
 <rect x="16" y="254" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
@@ -147,6 +148,33 @@
 <rect x="16" y="404" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
 <rect x="16" y="404" width="6" height="6" rx="1" fill="#00aa22"/>
 <text x="150" y="410" class="mono dim" font-size="8">2</text>
+=======
+<text x="150" y="230" class="mono dim" font-size="8">57</text>
+<text x="16" y="250" class="mono dim" font-size="9">JavaScript</text>
+<rect x="16" y="254" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
+<rect x="16" y="254" width="54" height="6" rx="1" fill="#00aa22"/>
+<text x="150" y="260" class="mono dim" font-size="8">24</text>
+<text x="16" y="280" class="mono dim" font-size="9">HTML</text>
+<rect x="16" y="284" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
+<rect x="16" y="284" width="31" height="6" rx="1" fill="#00aa22"/>
+<text x="150" y="290" class="mono dim" font-size="8">14</text>
+<text x="16" y="310" class="mono dim" font-size="9">Rust</text>
+<rect x="16" y="314" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
+<rect x="16" y="314" width="22" height="6" rx="1" fill="#00aa22"/>
+<text x="150" y="320" class="mono dim" font-size="8">10</text>
+<text x="16" y="340" class="mono dim" font-size="9">C++</text>
+<rect x="16" y="344" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
+<rect x="16" y="344" width="22" height="6" rx="1" fill="#00aa22"/>
+<text x="150" y="350" class="mono dim" font-size="8">10</text>
+<text x="16" y="370" class="mono dim" font-size="9">PHP</text>
+<rect x="16" y="374" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
+<rect x="16" y="374" width="9" height="6" rx="1" fill="#00aa22"/>
+<text x="150" y="380" class="mono dim" font-size="8">4</text>
+<text x="16" y="400" class="mono dim" font-size="9">Java</text>
+<rect x="16" y="404" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
+<rect x="16" y="404" width="9" height="6" rx="1" fill="#00aa22"/>
+<text x="150" y="410" class="mono dim" font-size="8">4</text>
+>>>>>>> 70ca91e (moreso)
 
 <!-- Footer line -->
 <line x1="8" y1="436" x2="232" y2="436" stroke="#006600" stroke-width="0.5"/>
@@ -252,7 +280,11 @@
 <text x="4" y="234" class="mono primary" font-size="8.5">  Active: running (armed)</text>
 <text x="4" y="248" class="mono primary" font-size="8.5">$ ping -c1 adversary.net</text>
 <text x="4" y="262" class="mono primary" font-size="8.5">  INTERCEPTED: packet nulled</text>
+<<<<<<< HEAD
 <text x="4" y="276" class="mono primary" font-size="8.5">$ last_sync: 2026-07-22 15:53 UTC</text>
+=======
+<text x="4" y="276" class="mono primary" font-size="8.5">$ last_sync: 2026-07-22 16:01 UTC</text>
+>>>>>>> 70ca91e (moreso)
 <text x="4" y="290" class="mono primary" font-size="8.5">  [OK] all systems nominal</text>
 <text x="4" y="304" class="mono primary" font-size="8.5">$ whoami</text>
 <text x="4" y="318" class="mono primary" font-size="8.5">  ArapKBett</text>
@@ -273,7 +305,11 @@
 <text x="4" y="528" class="mono primary" font-size="8.5">  Active: running (armed)</text>
 <text x="4" y="542" class="mono primary" font-size="8.5">$ ping -c1 adversary.net</text>
 <text x="4" y="556" class="mono primary" font-size="8.5">  INTERCEPTED: packet nulled</text>
+<<<<<<< HEAD
 <text x="4" y="570" class="mono primary" font-size="8.5">$ last_sync: 2026-07-22 15:53 UTC</text>
+=======
+<text x="4" y="570" class="mono primary" font-size="8.5">$ last_sync: 2026-07-22 16:01 UTC</text>
+>>>>>>> 70ca91e (moreso)
 <text x="4" y="584" class="mono primary" font-size="8.5">  [OK] all systems nominal</text>
       </g>
     </g>
@@ -408,6 +444,5 @@
 <text x="16" y="494" class="mono dim" font-size="8">
   CONTACTS: bettarap254@gmail.com | github.com/ArapKBett | x.com/kp15_5 | arapbett.onrender.com
 </text>
-<text x="820" y="494" class="mono dim" font-size="8">SYNC: 2026-07-22 15:53 UTC</text>
 
 </svg>

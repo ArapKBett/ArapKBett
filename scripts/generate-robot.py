@@ -26,17 +26,33 @@ def fetch_github_api(endpoint):
         headers["Authorization"] = f"token {token}"
     try:
         req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            return json.loads(resp.read().decode())
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            raw = resp.read()
+            return json.loads(raw.decode())
     except Exception as e:
         print(f"[!] API error for {endpoint}: {e}")
         return None
 
 
+def fetch_repos_paginated():
+    """Fetch repos in pages of 30 to avoid large response failures."""
+    all_repos = []
+    for page in range(1, 6):  # up to 150 repos
+        batch = fetch_github_api(
+            f"users/{USERNAME}/repos?per_page=30&page={page}&type=owner&sort=updated"
+        )
+        if not batch:
+            break
+        all_repos.extend(batch)
+        if len(batch) < 30:
+            break
+    return all_repos
+
+
 def get_github_data():
     """Fetch all required GitHub data."""
     user = fetch_github_api(f"users/{USERNAME}") or {}
-    repos_raw = fetch_github_api(f"users/{USERNAME}/repos?per_page=100&type=owner") or []
+    repos_raw = fetch_repos_paginated()
 
     public_repos = user.get("public_repos", 0)
     followers = user.get("followers", 0)
