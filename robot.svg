@@ -1,0 +1,386 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+<defs>
+  <style>
+    .mono { font-family: 'Courier New', Courier, monospace; }
+    .primary { fill: #00ff41; }
+    .dim { fill: #006600; }
+    .accent { fill: #00aa22; }
+    .white { fill: #ccffcc; }
+
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0.1; }
+    }
+    @keyframes blink-slow {
+      0%, 70% { opacity: 1; }
+      71%, 100% { opacity: 0.15; }
+    }
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 1; filter: url(#sglow); }
+      50% { opacity: 0.5; filter: url(#glow); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(0px); opacity: 0.06; }
+      100% { transform: translateY(500px); opacity: 0.06; }
+    }
+    @keyframes scroll-term {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-294px); }
+    }
+    @keyframes stream-item {
+      0%   { opacity: 0;   transform: translateX(0px); }
+      10%  { opacity: 1;   transform: translateX(20px); }
+      80%  { opacity: 0.9; transform: translateX(200px); }
+      100% { opacity: 0;   transform: translateX(220px); }
+    }
+    @keyframes flicker {
+      0%, 95%, 100% { opacity: 1; }
+      96% { opacity: 0.7; }
+      97% { opacity: 1; }
+      98% { opacity: 0.5; }
+      99% { opacity: 1; }
+    }
+    @keyframes antenna-blink {
+      0%, 60% { fill: #00ff41; opacity: 1; }
+      61%, 100% { fill: #003300; opacity: 0.3; }
+    }
+    @keyframes seg-blink {
+      0%, 45% { fill: #00ff41; }
+      46%, 100% { fill: #003300; }
+    }
+  </style>
+
+  <!-- Glow filter -->
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <!-- Strong glow filter -->
+  <filter id="sglow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- Terminal clip -->
+  <clipPath id="term-clip">
+    <rect x="0" y="0" width="148" height="175"/>
+  </clipPath>
+
+  <!-- Background grid pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00ff41" stroke-width="0.15" opacity="0.2"/>
+  </pattern>
+</defs>
+
+<!-- ── BACKGROUND ─────────────────────────────────────────── -->
+<rect width="900" height="500" fill="#0d1117"/>
+<rect width="900" height="500" fill="url(#grid)"/>
+
+<!-- Scanline sweep -->
+<rect x="0" y="-30" width="900" height="30" fill="#00ff41" opacity="0.04"
+  style="animation: scanline 6s linear infinite;"/>
+
+<!-- Panel dividers -->
+<line x1="240" y1="0" x2="240" y2="500" stroke="#00ff41" stroke-width="0.5" opacity="0.4"/>
+<line x1="630" y1="0" x2="630" y2="500" stroke="#00ff41" stroke-width="0.5" opacity="0.4"/>
+
+<!-- ── HEADER BAR ──────────────────────────────────────────── -->
+<rect x="0" y="0" width="900" height="34" fill="#010d00"/>
+<rect x="0" y="33" width="900" height="1" fill="#00ff41" opacity="0.6"/>
+<text x="16" y="22" class="mono primary" font-size="11" font-weight="bold"
+  filter="url(#glow)">UNIT: ARAP-BOT v2.0 // CYBERSECURITY OPERATIVE</text>
+<circle cx="850" cy="17" r="5" fill="#00ff41" style="animation: blink 1.2s step-end infinite;"/>
+<circle cx="866" cy="17" r="5" fill="#00aa22" style="animation: blink 1.8s step-end 0.4s infinite;"/>
+<circle cx="882" cy="17" r="5" fill="#006600" style="animation: blink 2.4s step-end 0.8s infinite;"/>
+
+<!-- ── LEFT PANEL: SYS_TELEMETRY ──────────────────────────── -->
+<rect x="0" y="34" width="240" height="466" fill="#010d00" opacity="0.6"/>
+<text x="16" y="58" class="mono primary" font-size="10" font-weight="bold"
+  filter="url(#glow)">SYS_TELEMETRY</text>
+<line x1="8" y1="64" x2="232" y2="64" stroke="#00aa22" stroke-width="0.5"/>
+
+<!-- Stats table -->
+<text x="16" y="80" class="mono dim" font-size="9">REPOS</text><text x="120" y="80" class="mono primary" font-size="9">146</text>
+<text x="16" y="102" class="mono dim" font-size="9">STARS</text><text x="120" y="102" class="mono primary" font-size="9">0</text>
+<text x="16" y="124" class="mono dim" font-size="9">FOLLOWERS</text><text x="120" y="124" class="mono primary" font-size="9">3</text>
+<text x="16" y="146" class="mono dim" font-size="9">FOLLOWING</text><text x="120" y="146" class="mono primary" font-size="9">6</text>
+<text x="16" y="168" class="mono dim" font-size="9">FORKS</text><text x="120" y="168" class="mono primary" font-size="9">0</text>
+
+<line x1="8" y1="196" x2="232" y2="196" stroke="#006600" stroke-width="0.5"/>
+
+<!-- Language distribution label -->
+<text x="16" y="212" class="mono accent" font-size="9">LANG_DISTRIBUTION</text>
+
+<!-- Language bars -->
+
+
+<!-- Footer line -->
+<line x1="8" y1="436" x2="232" y2="436" stroke="#006600" stroke-width="0.5"/>
+<text x="16" y="452" class="mono dim" font-size="8">KERNEL: ARAP-OS v5.0</text>
+<text x="16" y="464" class="mono dim" font-size="8">UPTIME: 99.97%</text>
+
+<!-- ── CENTER ROBOT ────────────────────────────────────────── -->
+<!-- Robot group centered at x=430 -->
+<g transform="translate(430, 54)" style="animation: flicker 8s ease-in-out infinite;">
+
+  <!-- Antenna base -->
+  <rect x="-4" y="-38" width="8" height="30" rx="2" fill="#00aa22"/>
+  <!-- Antenna arms -->
+  <rect x="-28" y="-26" width="24" height="3" rx="1" fill="#006600"/>
+  <rect x="4" y="-26" width="24" height="3" rx="1" fill="#006600"/>
+  <circle cx="-28" cy="-24" r="4" fill="#00ff41" filter="url(#glow)"
+    style="animation: antenna-blink 1.4s step-end infinite;"/>
+  <circle cx="28" cy="-24" r="4" fill="#00ff41" filter="url(#glow)"
+    style="animation: antenna-blink 1.4s step-end 0.7s infinite;"/>
+  <!-- Antenna tip -->
+  <circle cx="0" cy="-42" r="6" fill="#00ff41" filter="url(#sglow)"
+    style="animation: antenna-blink 0.9s step-end infinite;"/>
+  <circle cx="0" cy="-42" r="3" fill="#ccffcc"/>
+
+  <!-- HEAD -->
+  <rect x="-55" y="-8" width="110" height="76" rx="6" fill="#010d00" stroke="#00ff41"
+    stroke-width="1.5" filter="url(#glow)"/>
+  <!-- Head rivets -->
+  <circle cx="-48" cy="-2" r="2" fill="#006600"/>
+  <circle cx="48" cy="-2" r="2" fill="#006600"/>
+  <circle cx="-48" cy="62" r="2" fill="#006600"/>
+  <circle cx="48" cy="62" r="2" fill="#006600"/>
+
+  <!-- Eyes -->
+  <rect x="-42" y="8" width="32" height="18" rx="3" fill="#001a00" stroke="#00ff41"
+    stroke-width="1" style="animation: blink-slow 3.5s step-end infinite;"/>
+  <rect x="-38" y="11" width="24" height="12" rx="2" fill="#00ff41" filter="url(#sglow)"
+    style="animation: blink-slow 3.5s step-end infinite;"/>
+  <rect x="10" y="8" width="32" height="18" rx="3" fill="#001a00" stroke="#00ff41"
+    stroke-width="1" style="animation: blink-slow 3.5s step-end 0.3s infinite;"/>
+  <rect x="14" y="11" width="24" height="12" rx="2" fill="#00ff41" filter="url(#sglow)"
+    style="animation: blink-slow 3.5s step-end 0.3s infinite;"/>
+
+  <!-- Nose sensor -->
+  <rect x="-5" y="33" width="10" height="6" rx="2" fill="#006600" stroke="#00aa22" stroke-width="0.8"/>
+  <circle cx="0" cy="36" r="2" fill="#00ff41" style="animation: blink 2.1s step-end infinite;"/>
+
+  <!-- Mouth bar - 8 segments -->
+  <rect x="-42" y="50" width="84" height="10" rx="2" fill="#001a00" stroke="#006600" stroke-width="0.8"/>
+  <rect x="-40" y="52" width="8" height="6" rx="1" fill="#00ff41"
+    style="animation: seg-blink 0.6s step-end 0.0s infinite;"/>
+  <rect x="-30" y="52" width="8" height="6" rx="1" fill="#00ff41"
+    style="animation: seg-blink 0.6s step-end 0.1s infinite;"/>
+  <rect x="-20" y="52" width="8" height="6" rx="1" fill="#00ff41"
+    style="animation: seg-blink 0.6s step-end 0.2s infinite;"/>
+  <rect x="-10" y="52" width="8" height="6" rx="1" fill="#00ff41"
+    style="animation: seg-blink 0.6s step-end 0.3s infinite;"/>
+  <rect x="2" y="52" width="8" height="6" rx="1" fill="#00ff41"
+    style="animation: seg-blink 0.6s step-end 0.4s infinite;"/>
+  <rect x="12" y="52" width="8" height="6" rx="1" fill="#00ff41"
+    style="animation: seg-blink 0.6s step-end 0.5s infinite;"/>
+  <rect x="22" y="52" width="8" height="6" rx="1" fill="#00ff41"
+    style="animation: seg-blink 0.6s step-end 0.6s infinite;"/>
+  <rect x="32" y="52" width="8" height="6" rx="1" fill="#00ff41"
+    style="animation: seg-blink 0.6s step-end 0.7s infinite;"/>
+
+  <!-- NECK -->
+  <rect x="-18" y="68" width="36" height="22" rx="2" fill="#010d00" stroke="#006600" stroke-width="1"/>
+  <!-- Neck parallel lines -->
+  <line x1="-12" y1="72" x2="-12" y2="88" stroke="#00aa22" stroke-width="1.5"/>
+  <line x1="-6"  y1="72" x2="-6"  y2="88" stroke="#00aa22" stroke-width="1.5"/>
+  <line x1="0"   y1="72" x2="0"   y2="88" stroke="#00aa22" stroke-width="1.5"/>
+  <line x1="6"   y1="72" x2="6"   y2="88" stroke="#00aa22" stroke-width="1.5"/>
+  <line x1="12"  y1="72" x2="12"  y2="88" stroke="#00aa22" stroke-width="1.5"/>
+
+  <!-- TORSO -->
+  <rect x="-72" y="90" width="144" height="130" rx="8" fill="#010d00" stroke="#00ff41"
+    stroke-width="1.5" filter="url(#glow)" style="animation: flicker 10s ease-in-out 2s infinite;"/>
+
+  <!-- Chest terminal screen -->
+  <rect x="-58" y="100" width="116" height="88" rx="4" fill="#000a00" stroke="#00aa22"
+    stroke-width="1"/>
+  <!-- Terminal content clip and scroll -->
+  <g transform="translate(-56, 104)">
+    <g clip-path="url(#term-clip)">
+      <g style="animation: scroll-term 14.7s linear infinite;">
+        <text x="4" y="10" class="mono primary" font-size="8.5">$ whoami</text>
+<text x="4" y="24" class="mono primary" font-size="8.5">  ArapKBett</text>
+<text x="4" y="38" class="mono primary" font-size="8.5">$ cat /sys/operative/ArapKBett.conf</text>
+<text x="4" y="52" class="mono primary" font-size="8.5">  [OPERATIVE] ArapKBett</text>
+<text x="4" y="66" class="mono primary" font-size="8.5">  [ROLE]      Cybersecurity Engineer</text>
+<text x="4" y="80" class="mono primary" font-size="8.5">  [BASE]      Kenya</text>
+<text x="4" y="94" class="mono primary" font-size="8.5">  [STATUS]    ACTIVE</text>
+<text x="4" y="108" class="mono primary" font-size="8.5">$ cat /sys/stats.json</text>
+<text x="4" y="122" class="mono primary" font-size="8.5">  repos    : 146</text>
+<text x="4" y="136" class="mono primary" font-size="8.5">  stars    : 0</text>
+<text x="4" y="150" class="mono primary" font-size="8.5">  followers: 3</text>
+<text x="4" y="164" class="mono primary" font-size="8.5">  forks    : 0</text>
+<text x="4" y="178" class="mono primary" font-size="8.5">$ ls /arsenal/</text>
+<text x="4" y="192" class="mono primary" font-size="8.5">  nmap  msf  burp  hashcat</text>
+<text x="4" y="206" class="mono primary" font-size="8.5">  yara  docker  k8s  tf</text>
+<text x="4" y="220" class="mono primary" font-size="8.5">$ systemctl status firewall</text>
+<text x="4" y="234" class="mono primary" font-size="8.5">  Active: running (armed)</text>
+<text x="4" y="248" class="mono primary" font-size="8.5">$ ping -c1 adversary.net</text>
+<text x="4" y="262" class="mono primary" font-size="8.5">  INTERCEPTED: packet nulled</text>
+<text x="4" y="276" class="mono primary" font-size="8.5">$ last_sync: 2026-07-22 15:43 UTC</text>
+<text x="4" y="290" class="mono primary" font-size="8.5">  [OK] all systems nominal</text>
+<text x="4" y="304" class="mono primary" font-size="8.5">$ whoami</text>
+<text x="4" y="318" class="mono primary" font-size="8.5">  ArapKBett</text>
+<text x="4" y="332" class="mono primary" font-size="8.5">$ cat /sys/operative/ArapKBett.conf</text>
+<text x="4" y="346" class="mono primary" font-size="8.5">  [OPERATIVE] ArapKBett</text>
+<text x="4" y="360" class="mono primary" font-size="8.5">  [ROLE]      Cybersecurity Engineer</text>
+<text x="4" y="374" class="mono primary" font-size="8.5">  [BASE]      Kenya</text>
+<text x="4" y="388" class="mono primary" font-size="8.5">  [STATUS]    ACTIVE</text>
+<text x="4" y="402" class="mono primary" font-size="8.5">$ cat /sys/stats.json</text>
+<text x="4" y="416" class="mono primary" font-size="8.5">  repos    : 146</text>
+<text x="4" y="430" class="mono primary" font-size="8.5">  stars    : 0</text>
+<text x="4" y="444" class="mono primary" font-size="8.5">  followers: 3</text>
+<text x="4" y="458" class="mono primary" font-size="8.5">  forks    : 0</text>
+<text x="4" y="472" class="mono primary" font-size="8.5">$ ls /arsenal/</text>
+<text x="4" y="486" class="mono primary" font-size="8.5">  nmap  msf  burp  hashcat</text>
+<text x="4" y="500" class="mono primary" font-size="8.5">  yara  docker  k8s  tf</text>
+<text x="4" y="514" class="mono primary" font-size="8.5">$ systemctl status firewall</text>
+<text x="4" y="528" class="mono primary" font-size="8.5">  Active: running (armed)</text>
+<text x="4" y="542" class="mono primary" font-size="8.5">$ ping -c1 adversary.net</text>
+<text x="4" y="556" class="mono primary" font-size="8.5">  INTERCEPTED: packet nulled</text>
+<text x="4" y="570" class="mono primary" font-size="8.5">$ last_sync: 2026-07-22 15:43 UTC</text>
+<text x="4" y="584" class="mono primary" font-size="8.5">  [OK] all systems nominal</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Torso side vents (left) -->
+  <rect x="-72" y="102" width="10" height="3" rx="1" fill="#006600"/>
+  <rect x="-72" y="110" width="10" height="3" rx="1" fill="#006600"/>
+  <rect x="-72" y="118" width="10" height="3" rx="1" fill="#006600"/>
+  <rect x="-72" y="126" width="10" height="3" rx="1" fill="#006600"/>
+  <!-- Torso side vents (right) -->
+  <rect x="62" y="102" width="10" height="3" rx="1" fill="#006600"/>
+  <rect x="62" y="110" width="10" height="3" rx="1" fill="#006600"/>
+  <rect x="62" y="118" width="10" height="3" rx="1" fill="#006600"/>
+  <rect x="62" y="126" width="10" height="3" rx="1" fill="#006600"/>
+
+  <!-- Torso bottom strip -->
+  <rect x="-58" y="196" width="116" height="18" rx="3" fill="#010d00" stroke="#006600"
+    stroke-width="0.8"/>
+  <rect x="-52" y="200" width="20" height="10" rx="2" fill="#00aa22" opacity="0.8"/>
+  <rect x="-26" y="200" width="20" height="10" rx="2" fill="#006600"/>
+  <rect x="0"   y="200" width="20" height="10" rx="2" fill="#00ff41"
+    style="animation: blink 1.5s step-end infinite;"/>
+  <rect x="26"  y="200" width="20" height="10" rx="2" fill="#006600"/>
+
+  <!-- LEFT ARM -->
+  <!-- Shoulder joint (left) -->
+  <circle cx="-88" cy="108" r="14" fill="#010d00" stroke="#00ff41" stroke-width="1.5"
+    filter="url(#sglow)" style="animation: pulse-glow 2s ease-in-out infinite;"/>
+  <circle cx="-88" cy="108" r="8" fill="#00ff41" opacity="0.8"
+    style="animation: pulse-glow 2s ease-in-out infinite;"/>
+  <!-- Upper arm (left) -->
+  <rect x="-106" y="120" width="22" height="65" rx="5" fill="#010d00" stroke="#00aa22"
+    stroke-width="1"/>
+  <!-- Elbow joint (left) -->
+  <circle cx="-95" cy="192" r="9" fill="#010d00" stroke="#006600" stroke-width="1"/>
+  <!-- Forearm (left) -->
+  <rect x="-106" y="196" width="22" height="55" rx="5" fill="#010d00" stroke="#006600"
+    stroke-width="1"/>
+  <!-- Hand (left) -->
+  <rect x="-110" y="250" width="30" height="16" rx="4" fill="#010d00" stroke="#00aa22"
+    stroke-width="1"/>
+
+  <!-- RIGHT ARM -->
+  <!-- Shoulder joint (right) -->
+  <circle cx="88" cy="108" r="14" fill="#010d00" stroke="#00ff41" stroke-width="1.5"
+    filter="url(#sglow)" style="animation: pulse-glow 2s ease-in-out 1s infinite;"/>
+  <circle cx="88" cy="108" r="8" fill="#00ff41" opacity="0.8"
+    style="animation: pulse-glow 2s ease-in-out 1s infinite;"/>
+  <!-- Upper arm (right) -->
+  <rect x="84" y="120" width="22" height="65" rx="5" fill="#010d00" stroke="#00aa22"
+    stroke-width="1"/>
+  <!-- Elbow joint (right) -->
+  <circle cx="95" cy="192" r="9" fill="#010d00" stroke="#006600" stroke-width="1"/>
+  <!-- Forearm (right) -->
+  <rect x="84" y="196" width="22" height="55" rx="5" fill="#010d00" stroke="#006600"
+    stroke-width="1"/>
+  <!-- Hand (right) -->
+  <rect x="80" y="250" width="30" height="16" rx="4" fill="#010d00" stroke="#00aa22"
+    stroke-width="1"/>
+
+  <!-- HIP -->
+  <rect x="-60" y="220" width="120" height="20" rx="4" fill="#010d00" stroke="#006600"
+    stroke-width="1"/>
+  <rect x="-50" y="224" width="40" height="12" rx="2" fill="#001a00" stroke="#006600"
+    stroke-width="0.6"/>
+  <rect x="10" y="224" width="40" height="12" rx="2" fill="#001a00" stroke="#006600"
+    stroke-width="0.6"/>
+
+  <!-- LEFT LEG -->
+  <rect x="-54" y="240" width="38" height="75" rx="5" fill="#010d00" stroke="#00aa22"
+    stroke-width="1"/>
+  <!-- Knee joint (left) -->
+  <rect x="-52" y="280" width="34" height="12" rx="3" fill="#001a00" stroke="#006600"
+    stroke-width="0.8"/>
+  <!-- Shin (left) -->
+  <rect x="-50" y="315" width="30" height="50" rx="4" fill="#010d00" stroke="#006600"
+    stroke-width="1"/>
+  <!-- Foot (left) -->
+  <rect x="-58" y="362" width="46" height="14" rx="4" fill="#010d00" stroke="#00aa22"
+    stroke-width="1"/>
+
+  <!-- RIGHT LEG -->
+  <rect x="16" y="240" width="38" height="75" rx="5" fill="#010d00" stroke="#00aa22"
+    stroke-width="1"/>
+  <!-- Knee joint (right) -->
+  <rect x="18" y="280" width="34" height="12" rx="3" fill="#001a00" stroke="#006600"
+    stroke-width="0.8"/>
+  <!-- Shin (right) -->
+  <rect x="20" y="315" width="30" height="50" rx="4" fill="#010d00" stroke="#006600"
+    stroke-width="1"/>
+  <!-- Foot (right) -->
+  <rect x="12" y="362" width="46" height="14" rx="4" fill="#010d00" stroke="#00aa22"
+    stroke-width="1"/>
+
+</g>
+<!-- ── END ROBOT ───────────────────────────────────────────── -->
+
+<!-- ── RIGHT PANEL: TECH_STREAM ──────────────────────────── -->
+<rect x="630" y="34" width="270" height="466" fill="#010d00" opacity="0.6"/>
+<text x="642" y="58" class="mono primary" font-size="10" font-weight="bold"
+  filter="url(#glow)">TECH_STREAM // LIVE</text>
+<line x1="638" y1="64" x2="892" y2="64" stroke="#00aa22" stroke-width="0.5"/>
+
+<!-- Stream items - clipped to panel -->
+<g>
+  <clipPath id="stream-clip">
+    <rect x="630" y="65" width="270" height="430"/>
+  </clipPath>
+  <g clip-path="url(#stream-clip)">
+    <g class="stream-row-0" style="animation: stream-item 4.5s ease-out 0.0s infinite;"><rect x="640" y="68" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="81" class="mono primary" font-size="10">&gt;_ Nmap</text></g>
+<g class="stream-row-1" style="animation: stream-item 5.2s ease-out 0.8s infinite;"><rect x="640" y="95" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="108" class="mono primary" font-size="10">&gt;_ Metasploit</text></g>
+<g class="stream-row-2" style="animation: stream-item 5.9s ease-out 1.6s infinite;"><rect x="640" y="122" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="135" class="mono primary" font-size="10">&gt;_ Burp Suite</text></g>
+<g class="stream-row-3" style="animation: stream-item 4.5s ease-out 2.4s infinite;"><rect x="640" y="149" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="162" class="mono primary" font-size="10">&gt;_ Wireshark</text></g>
+<g class="stream-row-4" style="animation: stream-item 5.2s ease-out 3.2s infinite;"><rect x="640" y="176" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="189" class="mono primary" font-size="10">&gt;_ Hashcat</text></g>
+<g class="stream-row-5" style="animation: stream-item 5.9s ease-out 4.0s infinite;"><rect x="640" y="203" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="216" class="mono primary" font-size="10">&gt;_ SQLMap</text></g>
+<g class="stream-row-6" style="animation: stream-item 4.5s ease-out 4.8s infinite;"><rect x="640" y="230" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="243" class="mono primary" font-size="10">&gt;_ John.Ripper</text></g>
+<g class="stream-row-7" style="animation: stream-item 5.2s ease-out 5.6s infinite;"><rect x="640" y="257" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="270" class="mono primary" font-size="10">&gt;_ Aircrack</text></g>
+<g class="stream-row-8" style="animation: stream-item 5.9s ease-out 6.4s infinite;"><rect x="640" y="284" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="297" class="mono primary" font-size="10">&gt;_ Volatility</text></g>
+<g class="stream-row-9" style="animation: stream-item 4.5s ease-out 7.2s infinite;"><rect x="640" y="311" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="324" class="mono primary" font-size="10">&gt;_ YARA</text></g>
+<g class="stream-row-10" style="animation: stream-item 5.2s ease-out 8.0s infinite;"><rect x="640" y="338" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="351" class="mono primary" font-size="10">&gt;_ Python3</text></g>
+<g class="stream-row-11" style="animation: stream-item 5.9s ease-out 8.8s infinite;"><rect x="640" y="365" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="378" class="mono primary" font-size="10">&gt;_ Docker</text></g>
+<g class="stream-row-12" style="animation: stream-item 4.5s ease-out 9.6s infinite;"><rect x="640" y="392" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="405" class="mono primary" font-size="10">&gt;_ Kubernetes</text></g>
+<g class="stream-row-13" style="animation: stream-item 5.2s ease-out 10.4s infinite;"><rect x="640" y="419" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="432" class="mono primary" font-size="10">&gt;_ Terraform</text></g>
+<g class="stream-row-14" style="animation: stream-item 5.9s ease-out 11.2s infinite;"><rect x="640" y="446" width="240" height="18" rx="2" fill="#010d00" opacity="0.7"/><text x="650" y="459" class="mono primary" font-size="10">&gt;_ Git</text></g>
+  </g>
+</g>
+
+<!-- ── FOOTER BAR ─────────────────────────────────────────── -->
+<rect x="0" y="480" width="900" height="20" fill="#010d00"/>
+<rect x="0" y="480" width="900" height="1" fill="#00ff41" opacity="0.4"/>
+<text x="16" y="494" class="mono dim" font-size="8">
+  CONTACTS: bettarap254@gmail.com | github.com/ArapKBett | x.com/kp15_5 | arapbett.onrender.com
+</text>
+<text x="820" y="494" class="mono dim" font-size="8">SYNC: 2026-07-22 15:43 UTC</text>
+
+</svg>

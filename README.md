@@ -6,6 +6,9 @@
 <!-- TYPING ANIMATION -->
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=800&height=100&lines=%24+sudo+nmap+-sV+--script+vuln+target_system;%24+msfconsole+-q+-x+'use+exploit%2Fmulti%2Fhandler';%24+python3+ai_threat_detector.py+--mode+realtime;%24+hashcat+-m+1000+-a+0+hashes.txt+rockyou.txt;%24+kubectl+apply+-f+secure-deployment.yaml" alt="Typing SVG" /></a>
 
+<!-- ROBOT-START -->
+<!-- ROBOT-END -->
+
 <!-- PROFILE VIEWS & FOLLOWERS -->
 <br/>
 
@@ -237,50 +240,8 @@ current_objectives:
 
 <div align="center">
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-```properties
-# ══════════════════════════════
-#  THREAT DOMAINS
-# ══════════════════════════════
-
-[■■■■■■■■■■] Network Pentesting
-[■■■■■■■■■░] Web App Security
-[■■■■■■■■■░] Blockchain Forensics
-[■■■■■■■■░░] AI Threat Detection
-[■■■■■■■■░░] Exploit Development
-[■■■■■■■░░░] Reverse Engineering
-[■■■■■■■■■░] DevSecOps
-[■■■■■■■■░░] Incident Response
-[■■■■■■■░░░] Malware Analysis
-[■■■■■■■■░░] OSINT & Recon
-```
-
-</td>
-<td width="50%" valign="top">
-
-```properties
-# ══════════════════════════════
-#  SYSTEM SPECIFICATIONS
-# ══════════════════════════════
-
-OS:       Kali Linux / Ubuntu
-Shell:    zsh + custom configs
-Editor:   VS Code + Vim
-Terminal: tmux + alacritty
-VPN:      WireGuard / OpenVPN
-VM:       VirtualBox / VMware
-Cloud:    GCP / AWS / Render
-CI/CD:    GitHub Actions / Docker
-Comms:    Encrypted channels only
-Status:   ██████████ OPERATIONAL
-```
-
-</td>
-</tr>
-</table>
+<!-- LANG-MATRIX-START -->
+<!-- LANG-MATRIX-END -->
 
 </div>
 

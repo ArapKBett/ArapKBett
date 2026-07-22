@@ -8,6 +8,7 @@ import json
 import os
 import re
 import urllib.request
+from collections import Counter
 from datetime import datetime, timezone
 
 USERNAME = "ArapKBett"
@@ -146,6 +147,42 @@ def get_recent_activity(limit=10):
     return "\n".join(lines)
 
 
+def get_lang_matrix():
+    """Fetch repo languages and return a proportional bar code block."""
+    repos = fetch_github_api(
+        f"users/{USERNAME}/repos?per_page=100&type=owner"
+    )
+    if not repos:
+        return "```\n[LANG-MATRIX] No data available.\n```"
+
+    lang_counter = Counter()
+    for repo in repos:
+        lang = repo.get("language")
+        if lang:
+            lang_counter[lang] += 1
+
+    top_langs = lang_counter.most_common(8)
+    if not top_langs:
+        return "```\n[LANG-MATRIX] No language data found.\n```"
+
+    max_count = max(c for _, c in top_langs)
+    bar_len = 10
+    lines = []
+    lines.append("```properties")
+    lines.append("# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550")
+    lines.append("#  LANGUAGE MATRIX")
+    lines.append("# \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550")
+    lines.append("")
+    for lang, count in top_langs:
+        filled = round((count / max_count) * bar_len)
+        empty = bar_len - filled
+        bar = "\u25a0" * filled + "\u2591" * empty
+        lines.append(f"[{bar}] {lang:<16} {count} repo{'s' if count != 1 else ''}")
+    lines.append("")
+    lines.append("```")
+    return "\n".join(lines)
+
+
 def get_timestamp():
     """Generate auto-update timestamp."""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -173,6 +210,18 @@ def main():
     print("[*] Fetching recent activity...")
     activity_content = get_recent_activity()
     content = update_section(content, "<!-- ACTIVITY-START -->", "<!-- ACTIVITY-END -->", activity_content)
+
+    print("[*] Generating language matrix...")
+    lang_matrix_content = get_lang_matrix()
+    content = update_section(
+        content, "<!-- LANG-MATRIX-START -->", "<!-- LANG-MATRIX-END -->", lang_matrix_content
+    )
+
+    print("[*] Updating robot SVG reference...")
+    robot_content = '<img src="robot.svg" width="100%" alt="ARAP-BOT Cyberpunk Operative"/>'
+    content = update_section(
+        content, "<!-- ROBOT-START -->", "<!-- ROBOT-END -->", robot_content
+    )
 
     print("[*] Updating timestamp...")
     timestamp_content = get_timestamp()

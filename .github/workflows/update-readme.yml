@@ -30,12 +30,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update-readme.py
 
+      - name: Generate cyberpunk robot SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate-robot.py
+
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git diff --quiet README.md || {
-            git add README.md
-            git commit -m "chore: auto-update README with latest activity [skip ci]"
+          git diff --quiet README.md robot.svg || {
+            git add README.md robot.svg
+            git commit -m "chore: auto-update README and robot SVG [skip ci]"
             git push
           }
