@@ -58,7 +58,7 @@ status:         "ACTIVE"
 
 mission_statement: >
   Advancing cybersecurity through weaponized open-source tools,
-  AI-driven threat intelligence systems, and hardened infrastructure.
+  Threat intelligence systems, and hardened infrastructure.
   Every line of code is a line of defense.
 
 clearance_domains:
@@ -71,10 +71,10 @@ clearance_domains:
   - Incident Response Automation
 
 current_objectives:
-  - "Building AI-powered real-time threat detection systems"
-  - "Developing blockchain forensic analysis frameworks"
-  - "Automating offensive security workflows"
-  - "Contributing to open-source security tooling"
+  - "Real-time threat detection systems"
+  - "Blockchain forensic analysis frameworks"
+  - "Automated offensive security workflows"
+  - "Contribution to open-source security tooling"
 ```
 
 ---
