@@ -107,7 +107,7 @@
 <line x1="8" y1="64" x2="232" y2="64" stroke="#00aa22" stroke-width="0.5"/>
 
 <!-- Stats table -->
-<text x="16" y="80" class="mono dim" font-size="9">REPOS</text><text x="120" y="80" class="mono primary" font-size="9">146</text>
+<text x="16" y="80" class="mono dim" font-size="9">REPOS</text><text x="120" y="80" class="mono primary" font-size="9">151</text>
 <text x="16" y="102" class="mono dim" font-size="9">STARS</text><text x="120" y="102" class="mono primary" font-size="9">3</text>
 <text x="16" y="124" class="mono dim" font-size="9">FOLLOWERS</text><text x="120" y="124" class="mono primary" font-size="9">3</text>
 <text x="16" y="146" class="mono dim" font-size="9">FOLLOWING</text><text x="120" y="146" class="mono primary" font-size="9">6</text>
@@ -125,8 +125,8 @@
 <text x="150" y="230" class="mono dim" font-size="8">57</text>
 <text x="16" y="250" class="mono dim" font-size="9">JavaScript</text>
 <rect x="16" y="254" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
-<rect x="16" y="254" width="54" height="6" rx="1" fill="#00aa22"/>
-<text x="150" y="260" class="mono dim" font-size="8">24</text>
+<rect x="16" y="254" width="61" height="6" rx="1" fill="#00aa22"/>
+<text x="150" y="260" class="mono dim" font-size="8">27</text>
 <text x="16" y="280" class="mono dim" font-size="9">HTML</text>
 <rect x="16" y="284" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
 <rect x="16" y="284" width="31" height="6" rx="1" fill="#00aa22"/>
@@ -137,8 +137,8 @@
 <text x="150" y="320" class="mono dim" font-size="8">10</text>
 <text x="16" y="340" class="mono dim" font-size="9">C++</text>
 <rect x="16" y="344" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
-<rect x="16" y="344" width="22" height="6" rx="1" fill="#00aa22"/>
-<text x="150" y="350" class="mono dim" font-size="8">10</text>
+<rect x="16" y="344" width="20" height="6" rx="1" fill="#00aa22"/>
+<text x="150" y="350" class="mono dim" font-size="8">9</text>
 <text x="16" y="370" class="mono dim" font-size="9">PHP</text>
 <rect x="16" y="374" width="130" height="6" rx="1" fill="#010d00" stroke="#006600" stroke-width="0.5"/>
 <rect x="16" y="374" width="9" height="6" rx="1" fill="#00aa22"/>
@@ -241,7 +241,7 @@
 <text x="4" y="80" class="mono primary" font-size="8.5">  [BASE]      Kenya</text>
 <text x="4" y="94" class="mono primary" font-size="8.5">  [STATUS]    ACTIVE</text>
 <text x="4" y="108" class="mono primary" font-size="8.5">$ cat /sys/stats.json</text>
-<text x="4" y="122" class="mono primary" font-size="8.5">  repos    : 146</text>
+<text x="4" y="122" class="mono primary" font-size="8.5">  repos    : 151</text>
 <text x="4" y="136" class="mono primary" font-size="8.5">  stars    : 3</text>
 <text x="4" y="150" class="mono primary" font-size="8.5">  followers: 3</text>
 <text x="4" y="164" class="mono primary" font-size="8.5">  forks    : 1</text>
@@ -252,7 +252,7 @@
 <text x="4" y="234" class="mono primary" font-size="8.5">  Active: running (armed)</text>
 <text x="4" y="248" class="mono primary" font-size="8.5">$ ping -c1 adversary.net</text>
 <text x="4" y="262" class="mono primary" font-size="8.5">  INTERCEPTED: packet nulled</text>
-<text x="4" y="276" class="mono primary" font-size="8.5">$ last_sync: 2026-09-30 11:51 UTC</text>
+<text x="4" y="276" class="mono primary" font-size="8.5">$ last_sync: 2026-09-30 17:31 UTC</text>
 <text x="4" y="290" class="mono primary" font-size="8.5">  [OK] all systems nominal</text>
 <text x="4" y="304" class="mono primary" font-size="8.5">$ whoami</text>
 <text x="4" y="318" class="mono primary" font-size="8.5">  ArapKBett</text>
@@ -262,7 +262,7 @@
 <text x="4" y="374" class="mono primary" font-size="8.5">  [BASE]      Kenya</text>
 <text x="4" y="388" class="mono primary" font-size="8.5">  [STATUS]    ACTIVE</text>
 <text x="4" y="402" class="mono primary" font-size="8.5">$ cat /sys/stats.json</text>
-<text x="4" y="416" class="mono primary" font-size="8.5">  repos    : 146</text>
+<text x="4" y="416" class="mono primary" font-size="8.5">  repos    : 151</text>
 <text x="4" y="430" class="mono primary" font-size="8.5">  stars    : 3</text>
 <text x="4" y="444" class="mono primary" font-size="8.5">  followers: 3</text>
 <text x="4" y="458" class="mono primary" font-size="8.5">  forks    : 1</text>
@@ -273,7 +273,7 @@
 <text x="4" y="528" class="mono primary" font-size="8.5">  Active: running (armed)</text>
 <text x="4" y="542" class="mono primary" font-size="8.5">$ ping -c1 adversary.net</text>
 <text x="4" y="556" class="mono primary" font-size="8.5">  INTERCEPTED: packet nulled</text>
-<text x="4" y="570" class="mono primary" font-size="8.5">$ last_sync: 2026-09-30 11:51 UTC</text>
+<text x="4" y="570" class="mono primary" font-size="8.5">$ last_sync: 2026-09-30 17:31 UTC</text>
 <text x="4" y="584" class="mono primary" font-size="8.5">  [OK] all systems nominal</text>
       </g>
     </g>
@@ -408,6 +408,6 @@
 <text x="16" y="494" class="mono dim" font-size="8">
   CONTACTS: bettarap254@gmail.com | github.com/ArapKBett | x.com/kp15_5 | arapbett.onrender.com
 </text>
-<text x="820" y="494" class="mono dim" font-size="8">SYNC: 2026-09-30 11:51 UTC</text>
+<text x="820" y="494" class="mono dim" font-size="8">SYNC: 2026-09-30 17:31 UTC</text>
 
 </svg>
